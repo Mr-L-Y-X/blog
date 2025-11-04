@@ -2,7 +2,7 @@ name: Build and Deploy
 on: 
   push:
     branches:
-      - master
+      - main
 jobs:
   build-and-deploy:
     concurrency: ci-${{ github.ref }}
@@ -25,5 +25,5 @@ jobs:
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.3.3
         with:
-          branch: dist
+          branch: build
           folder: dist
