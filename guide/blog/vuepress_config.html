@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>vuepres中config.js的配置 | 摸鱼的后花园</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    <link rel="icon" type="image/svg+xml" href="/blog/img/logo.svg">
+    <link rel="stylesheet" href="/blog/css/index.css">
+    <script language="javascript" type="text/javascript" src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script language="javascript" type="text/javascript" src="/blog/js/MouseClickEffect.js"></script>
+    <meta name="description" content="合抱之木，生于毫末；九层之台，起于累土.">
+    <link rel="preload" href="/blog/assets/css/0.styles.7af90891.css" as="style"><link rel="preload" href="/blog/assets/js/app.f66333c5.js" as="script"><link rel="preload" href="/blog/assets/js/3.500455a2.js" as="script"><link rel="preload" href="/blog/assets/js/1.1b68369d.js" as="script"><link rel="preload" href="/blog/assets/js/29.b506d85b.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.eb606c5d.js"><link rel="prefetch" href="/blog/assets/js/11.69d87d45.js"><link rel="prefetch" href="/blog/assets/js/12.63532360.js"><link rel="prefetch" href="/blog/assets/js/13.30f73a3d.js"><link rel="prefetch" href="/blog/assets/js/14.2f56b612.js"><link rel="prefetch" href="/blog/assets/js/15.0234c421.js"><link rel="prefetch" href="/blog/assets/js/16.cebbafad.js"><link rel="prefetch" href="/blog/assets/js/17.4e8ce057.js"><link rel="prefetch" href="/blog/assets/js/18.fcb56b60.js"><link rel="prefetch" href="/blog/assets/js/19.f1f77d52.js"><link rel="prefetch" href="/blog/assets/js/20.c738bbeb.js"><link rel="prefetch" href="/blog/assets/js/21.e057ee82.js"><link rel="prefetch" href="/blog/assets/js/22.fa2c2225.js"><link rel="prefetch" href="/blog/assets/js/23.a01ee859.js"><link rel="prefetch" href="/blog/assets/js/24.940459b4.js"><link rel="prefetch" href="/blog/assets/js/25.5a9072f2.js"><link rel="prefetch" href="/blog/assets/js/26.10e75b2d.js"><link rel="prefetch" href="/blog/assets/js/27.653422b7.js"><link rel="prefetch" href="/blog/assets/js/28.93735386.js"><link rel="prefetch" href="/blog/assets/js/30.cbaea72e.js"><link rel="prefetch" href="/blog/assets/js/31.1d868fd7.js"><link rel="prefetch" href="/blog/assets/js/32.c77428cf.js"><link rel="prefetch" href="/blog/assets/js/33.59c60c01.js"><link rel="prefetch" href="/blog/assets/js/34.3d0ece02.js"><link rel="prefetch" href="/blog/assets/js/35.293bca61.js"><link rel="prefetch" href="/blog/assets/js/36.b4852f51.js"><link rel="prefetch" href="/blog/assets/js/37.d670bbda.js"><link rel="prefetch" href="/blog/assets/js/38.8f88af1c.js"><link rel="prefetch" href="/blog/assets/js/39.3ef3f7da.js"><link rel="prefetch" href="/blog/assets/js/4.9b5030bc.js"><link rel="prefetch" href="/blog/assets/js/40.a24c7a2a.js"><link rel="prefetch" href="/blog/assets/js/41.000f0a75.js"><link rel="prefetch" href="/blog/assets/js/42.a2c3fdb2.js"><link rel="prefetch" href="/blog/assets/js/43.934815be.js"><link rel="prefetch" href="/blog/assets/js/44.10bb1109.js"><link rel="prefetch" href="/blog/assets/js/45.106790ac.js"><link rel="prefetch" href="/blog/assets/js/46.b82a5597.js"><link rel="prefetch" href="/blog/assets/js/47.0f4798d2.js"><link rel="prefetch" href="/blog/assets/js/48.1f89d9e5.js"><link rel="prefetch" href="/blog/assets/js/49.b64f87d3.js"><link rel="prefetch" href="/blog/assets/js/5.5420dd01.js"><link rel="prefetch" href="/blog/assets/js/50.4a0c8020.js"><link rel="prefetch" href="/blog/assets/js/51.4aa663ad.js"><link rel="prefetch" href="/blog/assets/js/52.2bb51453.js"><link rel="prefetch" href="/blog/assets/js/53.18a49e04.js"><link rel="prefetch" href="/blog/assets/js/54.c3066ce2.js"><link rel="prefetch" href="/blog/assets/js/55.0acbb88f.js"><link rel="prefetch" href="/blog/assets/js/56.56d8ed2f.js"><link rel="prefetch" href="/blog/assets/js/57.da32b0c0.js"><link rel="prefetch" href="/blog/assets/js/58.c9161275.js"><link rel="prefetch" href="/blog/assets/js/59.ba31212c.js"><link rel="prefetch" href="/blog/assets/js/6.2abe53b6.js"><link rel="prefetch" href="/blog/assets/js/60.ebab4f4c.js"><link rel="prefetch" href="/blog/assets/js/61.b338486a.js"><link rel="prefetch" href="/blog/assets/js/62.c90e59d3.js"><link rel="prefetch" href="/blog/assets/js/63.d9a974ac.js"><link rel="prefetch" href="/blog/assets/js/64.2796055f.js"><link rel="prefetch" href="/blog/assets/js/65.95690b1d.js"><link rel="prefetch" href="/blog/assets/js/66.bebd364c.js"><link rel="prefetch" href="/blog/assets/js/67.8ad13441.js"><link rel="prefetch" href="/blog/assets/js/68.617162d1.js"><link rel="prefetch" href="/blog/assets/js/69.862b69fd.js"><link rel="prefetch" href="/blog/assets/js/7.e20e8c4d.js"><link rel="prefetch" href="/blog/assets/js/70.51f0c200.js"><link rel="prefetch" href="/blog/assets/js/71.a3f3a352.js"><link rel="prefetch" href="/blog/assets/js/72.a3528fc6.js"><link rel="prefetch" href="/blog/assets/js/73.e9443f37.js"><link rel="prefetch" href="/blog/assets/js/74.89e1f298.js"><link rel="prefetch" href="/blog/assets/js/75.e647fe92.js"><link rel="prefetch" href="/blog/assets/js/76.18175326.js"><link rel="prefetch" href="/blog/assets/js/77.503bed72.js"><link rel="prefetch" href="/blog/assets/js/78.28b4fbf9.js"><link rel="prefetch" href="/blog/assets/js/79.2cda4d55.js"><link rel="prefetch" href="/blog/assets/js/8.439db30d.js"><link rel="prefetch" href="/blog/assets/js/80.59780d0f.js"><link rel="prefetch" href="/blog/assets/js/81.2bf71451.js"><link rel="prefetch" href="/blog/assets/js/82.23189a1d.js"><link rel="prefetch" href="/blog/assets/js/83.d4c80a6e.js"><link rel="prefetch" href="/blog/assets/js/84.52dad238.js"><link rel="prefetch" href="/blog/assets/js/85.bf7e9b71.js"><link rel="prefetch" href="/blog/assets/js/86.c0a0ebd2.js"><link rel="prefetch" href="/blog/assets/js/87.4355fb06.js"><link rel="prefetch" href="/blog/assets/js/88.f20c8fa1.js"><link rel="prefetch" href="/blog/assets/js/89.f577240f.js"><link rel="prefetch" href="/blog/assets/js/9.f57a54ad.js"><link rel="prefetch" href="/blog/assets/js/90.654b3b43.js"><link rel="prefetch" href="/blog/assets/js/91.ddb69a5c.js"><link rel="prefetch" href="/blog/assets/js/92.75bc697e.js"><link rel="prefetch" href="/blog/assets/js/93.73645e76.js"><link rel="prefetch" href="/blog/assets/js/94.8adb71c2.js"><link rel="prefetch" href="/blog/assets/js/95.b13bf9b4.js"><link rel="prefetch" href="/blog/assets/js/96.e669a6da.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.7af90891.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container" data-v-0ecec4a0><div data-v-0ecec4a0><div id="loader-wrapper" class="loading-wrapper" data-v-d48f4d20 data-v-0ecec4a0 data-v-0ecec4a0><div class="loader-main" data-v-d48f4d20><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-4e82dffc data-v-0ecec4a0 data-v-0ecec4a0><h3 class="title" data-v-4e82dffc data-v-4e82dffc>摸鱼的后花园</h3> <p class="description" data-v-4e82dffc data-v-4e82dffc>合抱之木，生于毫末；九层之台，起于累土.</p> <label id="box" class="inputBox" data-v-4e82dffc data-v-4e82dffc><input type="password" value="" data-v-4e82dffc> <span data-v-4e82dffc>Konck! Knock!</span> <button data-v-4e82dffc>OK</button></label> <div class="footer" data-v-4e82dffc data-v-4e82dffc><span data-v-4e82dffc><i class="iconfont reco-theme" data-v-4e82dffc></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-4e82dffc>vuePress-theme-reco</a></span> <span data-v-4e82dffc><i class="iconfont reco-copyright" data-v-4e82dffc></i> <a data-v-4e82dffc><span data-v-4e82dffc>Mr.Lan</span>
+            
+          <span data-v-4e82dffc>2021 - </span>
+          2025
+        </a></span></div></div> <div class="hide" data-v-0ecec4a0><header class="navbar" data-v-0ecec4a0><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><!----> <span class="site-name">摸鱼的后花园</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/categories/前端/" class="nav-link"><i class="undefined"></i>
+  前端
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/服务器/" class="nav-link"><i class="undefined"></i>
+  服务器
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/硬件/" class="nav-link"><i class="undefined"></i>
+  硬件
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/后端/" class="nav-link"><i class="undefined"></i>
+  后端
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/网络/" class="nav-link"><i class="undefined"></i>
+  网络
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/设计/" class="nav-link"><i class="undefined"></i>
+  设计
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/软件/" class="nav-link"><i class="undefined"></i>
+  软件
+</a></li></ul></div></div><div class="nav-item"><a href="/blog/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-document"></i>
+      知识点
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/know/js/js_bibao.html" class="nav-link"><i class="undefined"></i>
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/blog/know/css/css_flex.html" class="nav-link"><i class="undefined"></i>
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/blog/know/nodejs/nodejs_01.html" class="nav-link"><i class="undefined"></i>
+  nodejs
+</a></li><li class="dropdown-item"><!----> <a href="/blog/know/vue/vue_upload.html" class="nav-link"><i class="undefined"></i>
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/blog/know/Vuex/vue_vuex1.html" class="nav-link"><i class="undefined"></i>
+  Vuex
+</a></li><li class="dropdown-item"><!----> <a href="/blog/know/linux/command.html" class="nav-link"><i class="undefined"></i>
+  Linux
+</a></li><li class="dropdown-item"><!----> <a href="/blog/know/git/cmd.html" class="nav-link"><i class="undefined"></i>
+  git
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-gitlab"></i>
+      专题指南
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/guide/blog/vuepress_start.html" class="nav-link"><i class="undefined"></i>
+  搭建博客
+</a></li><li class="dropdown-item"><!----> <a href="/blog/guide/server/server_0.html" class="nav-link"><i class="undefined"></i>
+  搭建服务器
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-other"></i>
+      旁门左道
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/other/favorites/asciiPainting.html" class="nav-link"><i class="undefined"></i>
+  网页收藏夹
+</a></li><li class="dropdown-item"><!----> <a href="/blog/other/toy/N1.html" class="nav-link"><i class="undefined"></i>
+  斐讯N1盒子
+</a></li><li class="dropdown-item"><!----> <a href="/blog/other/toy/esp32cam.html" class="nav-link"><i class="undefined"></i>
+  ESP32-CAM
+</a></li><li class="dropdown-item"><!----> <a href="/blog/other/toy/cm211.html" class="nav-link"><i class="undefined"></i>
+  移动电视盒cm211-1
+</a></li><li class="dropdown-item"><!----> <a href="/blog/other/toy/keyboard.html" class="nav-link"><i class="undefined"></i>
+  数字功能区小键盘
+</a></li><li class="dropdown-item"><!----> <a href="/blog/other/toy/winhello.html" class="nav-link"><i class="undefined"></i>
+  windows人脸识别
+</a></li><li class="dropdown-item"><!----> <a href="/blog/other/toy/SlimeVR_MPU-6050.html" class="nav-link"><i class="undefined"></i>
+  SlimeVR全身追踪模块
+</a></li></ul></div></div><div class="nav-item"><a href="/blog/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间线
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-account"></i>
+      关于我
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/about/aboutMe.html" class="nav-link"><i class="undefined"></i>
+  关于我
+</a></li><li class="dropdown-item"><!----> <a href="/blog/about/resuMe.html" class="nav-link"><i class="undefined"></i>
+  简历
+</a></li><li class="dropdown-item"><!----> <a href="https://mrlanyx.github.io/Tetris" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  JS版俄罗斯方块
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://github.com/MrLanYX" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-0ecec4a0></div> <aside class="sidebar" data-v-0ecec4a0><div class="personal-info-wrapper" data-v-828910c6 data-v-0ecec4a0><img src="/blog/img/head.jpg" alt="author-avatar" class="personal-img" data-v-828910c6> <h3 class="name" data-v-828910c6>
+    Mr.Lan
+  </h3> <div class="num" data-v-828910c6><div data-v-828910c6><h3 data-v-828910c6>81</h3> <h6 data-v-828910c6>文章</h6></div> <div data-v-828910c6><h3 data-v-828910c6>92</h3> <h6 data-v-828910c6>标签</h6></div></div> <ul class="social-links" data-v-828910c6></ul> <hr data-v-828910c6></div> <nav class="nav-links"><div class="nav-item"><a href="/blog/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/categories/前端/" class="nav-link"><i class="undefined"></i>
+  前端
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/服务器/" class="nav-link"><i class="undefined"></i>
+  服务器
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/硬件/" class="nav-link"><i class="undefined"></i>
+  硬件
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/后端/" class="nav-link"><i class="undefined"></i>
+  后端
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/网络/" class="nav-link"><i class="undefined"></i>
+  网络
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/设计/" class="nav-link"><i class="undefined"></i>
+  设计
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/软件/" class="nav-link"><i class="undefined"></i>
+  软件
+</a></li></ul></div></div><div class="nav-item"><a href="/blog/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-document"></i>
+      知识点
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/know/js/js_bibao.html" class="nav-link"><i class="undefined"></i>
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/blog/know/css/css_flex.html" class="nav-link"><i class="undefined"></i>
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/blog/know/nodejs/nodejs_01.html" class="nav-link"><i class="undefined"></i>
+  nodejs
+</a></li><li class="dropdown-item"><!----> <a href="/blog/know/vue/vue_upload.html" class="nav-link"><i class="undefined"></i>
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/blog/know/Vuex/vue_vuex1.html" class="nav-link"><i class="undefined"></i>
+  Vuex
+</a></li><li class="dropdown-item"><!----> <a href="/blog/know/linux/command.html" class="nav-link"><i class="undefined"></i>
+  Linux
+</a></li><li class="dropdown-item"><!----> <a href="/blog/know/git/cmd.html" class="nav-link"><i class="undefined"></i>
+  git
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-gitlab"></i>
+      专题指南
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/guide/blog/vuepress_start.html" class="nav-link"><i class="undefined"></i>
+  搭建博客
+</a></li><li class="dropdown-item"><!----> <a href="/blog/guide/server/server_0.html" class="nav-link"><i class="undefined"></i>
+  搭建服务器
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-other"></i>
+      旁门左道
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/other/favorites/asciiPainting.html" class="nav-link"><i class="undefined"></i>
+  网页收藏夹
+</a></li><li class="dropdown-item"><!----> <a href="/blog/other/toy/N1.html" class="nav-link"><i class="undefined"></i>
+  斐讯N1盒子
+</a></li><li class="dropdown-item"><!----> <a href="/blog/other/toy/esp32cam.html" class="nav-link"><i class="undefined"></i>
+  ESP32-CAM
+</a></li><li class="dropdown-item"><!----> <a href="/blog/other/toy/cm211.html" class="nav-link"><i class="undefined"></i>
+  移动电视盒cm211-1
+</a></li><li class="dropdown-item"><!----> <a href="/blog/other/toy/keyboard.html" class="nav-link"><i class="undefined"></i>
+  数字功能区小键盘
+</a></li><li class="dropdown-item"><!----> <a href="/blog/other/toy/winhello.html" class="nav-link"><i class="undefined"></i>
+  windows人脸识别
+</a></li><li class="dropdown-item"><!----> <a href="/blog/other/toy/SlimeVR_MPU-6050.html" class="nav-link"><i class="undefined"></i>
+  SlimeVR全身追踪模块
+</a></li></ul></div></div><div class="nav-item"><a href="/blog/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间线
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-account"></i>
+      关于我
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/about/aboutMe.html" class="nav-link"><i class="undefined"></i>
+  关于我
+</a></li><li class="dropdown-item"><!----> <a href="/blog/about/resuMe.html" class="nav-link"><i class="undefined"></i>
+  简历
+</a></li><li class="dropdown-item"><!----> <a href="https://mrlanyx.github.io/Tetris" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  JS版俄罗斯方块
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://github.com/MrLanYX" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav> <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Blog</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/guide/blog/reco_theme_sidebar.html" class="sidebar-link">vuepres-reco主题@1.6.6版本中不能配置左侧文章导航显隐，修改依赖增加此功能</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>vuepress</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/guide/blog/vuepress_start.html" class="sidebar-link">【建站指引】创建一个属于自己的博客</a></li><li><a href="/blog/guide/blog/vuepress_install.html" class="sidebar-link">VuePress 搭建</a></li><li><a href="/blog/guide/blog/vuepress_config.html" aria-current="page" class="active sidebar-link">vuepres中config.js的配置</a></li><li><a href="/blog/guide/blog/vuepress_readme.html" class="sidebar-link">VuePress的README.md</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>主题应用</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/guide/blog/reco_theme.html" class="sidebar-link">vuepres-reco主题</a></li><li><a href="/blog/guide/blog/reco_plugins.html" class="sidebar-link">vuepres插件</a></li><li><a href="/blog/guide/blog/reco_sheng_ji.html" class="sidebar-link">vuepres-reco优化</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>总结</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/guide/blog/end.html" class="sidebar-link">创建个人博客总结</a></li></ul></section></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-4e82dffc data-v-0ecec4a0><h3 class="title" data-v-4e82dffc data-v-4e82dffc>vuepres中config.js的配置</h3> <!----> <label id="box" class="inputBox" data-v-4e82dffc data-v-4e82dffc><input type="password" value="" data-v-4e82dffc> <span data-v-4e82dffc>Konck! Knock!</span> <button data-v-4e82dffc>OK</button></label> <div class="footer" data-v-4e82dffc data-v-4e82dffc><span data-v-4e82dffc><i class="iconfont reco-theme" data-v-4e82dffc></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-4e82dffc>vuePress-theme-reco</a></span> <span data-v-4e82dffc><i class="iconfont reco-copyright" data-v-4e82dffc></i> <a data-v-4e82dffc><span data-v-4e82dffc>Mr.Lan</span>
+            
+          <span data-v-4e82dffc>2021 - </span>
+          2025
+        </a></span></div></div> <div data-v-0ecec4a0><main class="page"><section><div class="page-title"><h1 class="title">vuepres中config.js的配置</h1> <div data-v-1ff7123e><i class="iconfont reco-account" data-v-1ff7123e><span data-v-1ff7123e>Mr.Lan</span></i> <i class="iconfont reco-date" data-v-1ff7123e><span data-v-1ff7123e>2021/5/22</span></i> <!----> <i class="tags iconfont reco-tag" data-v-1ff7123e><span class="tag-item" data-v-1ff7123e>vue</span><span class="tag-item" data-v-1ff7123e>vuepress</span></i></div></div> <div class="theme-reco-content content__default"><p>博客创建指南第二章
+ <img src="/blog/assets/img/20220509152358.6ac5197c.png" alt="dom"></p> <hr> <p><code>./docs/.vuepress/config.js</code>该文件为默认端项目配置文件</p> <p>具体的配置信息过多，并且<a href="https://vuepress.vuejs.org/zh/config/" target="_blank" rel="noopener noreferrer">官方<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>有着详细介绍和使用</p> <h2 id="_1-config-js基础配置"><a href="#_1-config-js基础配置" class="header-anchor">#</a> <strong>1. config.js基础配置</strong></h2> <p>在此只介绍必要的配置属性（高亮为目前必要，剩余后期需要）</p> <div class="language-js line-numbers-mode"><div class="highlight-lines"><br><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><br><div class="highlighted"> </div><br><br><br></div><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+    title<span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span><span class="token comment">// 网站标题 兼首页大标题</span>
+    description<span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span><span class="token comment">// 首页标题的说明</span>
+    dest<span class="token operator">:</span> <span class="token string">'./dist'</span><span class="token punctuation">,</span><span class="token comment">// build打包后的位置</span>
+    port<span class="token operator">:</span> <span class="token string">'80'</span><span class="token punctuation">,</span><span class="token comment">// dev启动端口号</span>
+    head<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token comment">// 项目头部的引入元素（JavaScript，icon...）</span>
+        <span class="token punctuation">[</span><span class="token string">'link'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> rel<span class="token operator">:</span> <span class="token string">'icon'</span><span class="token punctuation">,</span> href<span class="token operator">:</span> <span class="token string">'/img/logo.ico'</span> <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    markdown<span class="token operator">:</span> <span class="token punctuation">{</span>
+        lineNumbers<span class="token operator">:</span> <span class="token boolean">true</span><span class="token comment">// markdown代码块显示行数</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    theme<span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span><span class="token comment">// 主题引入</span>
+    themeConfig<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token comment">// 主题配置</span>
+    plugins<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token comment">// 插件引入和配置</span>
+<span class="token punctuation">}</span>
+</code></pre><div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><p><code>theme</code>和<code>themeConfig</code>在主题中会有详细介绍</p> <p><code>plugins</code>安装部分插件美化博客界面</p> <h3 id="_1-1-head配置"><a href="#_1-1-head配置" class="header-anchor">#</a> <strong>1.1 head配置</strong></h3> <p>在head中我们能够引入网页头部需要的其他资源</p> <div class="custom-block danger"><p class="title">注意</p><p>这里对应的根目录为<code>./docs/.vuepress/public</code></p></div><ul><li>网页的icon图标引入</li></ul> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token punctuation">[</span><span class="token string">'link'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> rel<span class="token operator">:</span> <span class="token string">'icon'</span><span class="token punctuation">,</span> href<span class="token operator">:</span> <span class="token string">'/img/logo.ico'</span> <span class="token punctuation">}</span><span class="token punctuation">]</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li>引入JavaScript（例如jquery）</li></ul> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token punctuation">[</span><span class="token string">&quot;script&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;language&quot;</span><span class="token operator">:</span> <span class="token string">&quot;javascript&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;text/javascript&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;src&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js&quot;</span>
+<span class="token punctuation">}</span><span class="token punctuation">]</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><ul><li>如需要修改样式
+创建<code>.vuepress/styles/palette.styl</code>文件</li></ul> <div class="language-stylus line-numbers-mode"><pre class="language-stylus"><code><span class="token comment">// 颜色</span>
+<span class="token variable-declaration"><span class="token variable">$accentColor</span> <span class="token operator">=</span> <span class="token hexcode">#3eaf7c</span></span>
+<span class="token variable-declaration"><span class="token variable">$textColor</span> <span class="token operator">=</span> <span class="token hexcode">#2c3e50</span></span>
+<span class="token variable-declaration"><span class="token variable">$borderColor</span> <span class="token operator">=</span> <span class="token hexcode">#eaecef</span></span>
+<span class="token variable-declaration"><span class="token variable">$codeBgColor</span> <span class="token operator">=</span> <span class="token hexcode">#282c34</span></span>
+<span class="token variable-declaration"><span class="token variable">$arrowBgColor</span> <span class="token operator">=</span> <span class="token hexcode">#ccc</span></span>
+<span class="token variable-declaration"><span class="token variable">$badgeTipColor</span> <span class="token operator">=</span> <span class="token hexcode">#42b983</span></span>
+<span class="token variable-declaration"><span class="token variable">$badgeWarningColor</span> <span class="token operator">=</span> <span class="token func"><span class="token function">darken</span><span class="token punctuation">(</span><span class="token hexcode">#ffe564</span><span class="token punctuation">,</span> <span class="token number">35</span><span class="token unit">%</span><span class="token punctuation">)</span></span></span>
+<span class="token variable-declaration"><span class="token variable">$badgeErrorColor</span> <span class="token operator">=</span> <span class="token hexcode">#DA5961</span></span>
+
+<span class="token comment">// 布局</span>
+<span class="token variable-declaration"><span class="token variable">$navbarHeight</span> <span class="token operator">=</span> <span class="token number">3.6</span><span class="token unit">rem</span></span>
+<span class="token variable-declaration"><span class="token variable">$sidebarWidth</span> <span class="token operator">=</span> <span class="token number">20</span><span class="token unit">rem</span></span>
+<span class="token variable-declaration"><span class="token variable">$contentWidth</span> <span class="token operator">=</span> <span class="token number">740</span><span class="token unit">px</span></span>
+<span class="token variable-declaration"><span class="token variable">$homePageWidth</span> <span class="token operator">=</span> <span class="token number">960</span><span class="token unit">px</span></span>
+
+<span class="token comment">// 响应式变化点</span>
+<span class="token variable-declaration"><span class="token variable">$MQNarrow</span> <span class="token operator">=</span> <span class="token number">959</span><span class="token unit">px</span></span>
+<span class="token variable-declaration"><span class="token variable">$MQMobile</span> <span class="token operator">=</span> <span class="token number">719</span><span class="token unit">px</span></span>
+<span class="token variable-declaration"><span class="token variable">$MQMobileNarrow</span> <span class="token operator">=</span> <span class="token number">419</span><span class="token unit">px</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div><ul><li>引入css（方式二）</li></ul> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token punctuation">[</span><span class="token string">'link'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> rel<span class="token operator">:</span> <span class="token string">'stylesheet'</span><span class="token punctuation">,</span> href<span class="token operator">:</span> <span class="token string">'/css/style.css'</span> <span class="token punctuation">}</span><span class="token punctuation">]</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="_1-2-themeconfig配置"><a href="#_1-2-themeconfig配置" class="header-anchor">#</a> <strong>1.2 themeConfig配置</strong></h3> <div class="custom-block danger"><p class="title">建议</p><p>这一段的配置在使用主题后会有轻微的改变</p> <p>建议只是看些相关参数的意义</p> <p>如果想直接配置美观的主题，建议参考<a href="/blog/guide/blog/reco_theme.html">reco主题篇</a>中themeConfig的配置</p></div><div class="language-js line-numbers-mode"><div class="highlight-lines"><br><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div><pre class="language-js"><code>themeConfig<span class="token operator">:</span> <span class="token punctuation">{</span>
+    nav<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+        text<span class="token operator">:</span> <span class="token string">'指南'</span><span class="token punctuation">,</span> link<span class="token operator">:</span> <span class="token string">'/guide/'</span>
+    <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    sidebar<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token string">'/guide/'</span><span class="token operator">:</span><span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            title<span class="token operator">:</span><span class="token string">'指南1'</span><span class="token punctuation">,</span>
+            collapsable<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+            children<span class="token operator">:</span><span class="token punctuation">[</span>
+            <span class="token string">'/guide/one'</span><span class="token punctuation">,</span>
+            <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            title<span class="token operator">:</span><span class="token string">'指南2'</span><span class="token punctuation">,</span>
+            collapsable<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+            children<span class="token operator">:</span><span class="token punctuation">[</span>
+            <span class="token string">'/guide/two1'</span><span class="token punctuation">,</span>
+            <span class="token string">'/guide/two2'</span><span class="token punctuation">,</span>
+            <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    sidebarDepth<span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span><span class="token comment">// 侧导航栏深度</span>
+    lastUpdated<span class="token operator">:</span> <span class="token string">'Last Updated'</span><span class="token punctuation">,</span><span class="token comment">// 更新时间前缀名</span>
+    searchMaxSuggestoins<span class="token operator">:</span> <span class="token number">10</span><span class="token punctuation">,</span><span class="token comment">// 设置搜索的最大结果数</span>
+    serviceWorker<span class="token operator">:</span> <span class="token punctuation">{</span>
+        updatePopup<span class="token operator">:</span> <span class="token punctuation">{</span>
+            message<span class="token operator">:</span> <span class="token string">&quot;有新的内容.&quot;</span><span class="token punctuation">,</span>
+            buttonText<span class="token operator">:</span> <span class="token string">'更新'</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    editLinks<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    editLinkText<span class="token operator">:</span> <span class="token string">'在 GitHub 上编辑此页 ！'</span>
+<span class="token punctuation">}</span>
+</code></pre><div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br></div></div><h4 id="nav配置了顶部导航栏"><a href="#nav配置了顶部导航栏" class="header-anchor">#</a> <strong>nav配置了顶部导航栏</strong></h4> <ul><li><code>{text: '指南', link: '/guide/'}</code>是最简洁的配置方式</li> <li>这样的配置的结果，会在导航栏生成一个没有子菜单的跳转链接</li></ul> <h4 id="sidebar配置侧边导航"><a href="#sidebar配置侧边导航" class="header-anchor">#</a> <strong>sidebar配置侧边导航</strong></h4> <ul><li>在配置了顶部导航之后，为了方便管理该文件夹下的全部文件</li> <li>可以在sidebar中按照代码进行侧栏分组</li> <li>children中对应着归纳为一组的文件</li></ul> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token punctuation">{</span>
+    title<span class="token operator">:</span><span class="token string">'指南2'</span><span class="token punctuation">,</span>
+    collapsable<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    children<span class="token operator">:</span><span class="token punctuation">[</span>
+    <span class="token string">'/guide/two1'</span><span class="token punctuation">,</span>
+    <span class="token string">'/guide/two2'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h4 id="nav下拉分组"><a href="#nav下拉分组" class="header-anchor">#</a> <strong>nav下拉分组</strong></h4> <ul><li>顶部导航也能够像侧栏一样进行分组增加子条目</li> <li>只需增加items配置</li></ul> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token punctuation">{</span>
+    text<span class="token operator">:</span> <span class="token string">'知识分类'</span><span class="token punctuation">,</span>
+    link<span class="token operator">:</span> <span class="token string">'/know/'</span><span class="token punctuation">,</span>
+    items<span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span> text<span class="token operator">:</span> <span class="token string">'Vue'</span><span class="token punctuation">,</span> link<span class="token operator">:</span> <span class="token string">'/know/vue/'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span> text<span class="token operator">:</span> <span class="token string">'React'</span><span class="token punctuation">,</span> link<span class="token operator">:</span> <span class="token string">'/know/react/'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><ul><li>在这样的配置之后，还要为<code>/know/vue/</code>和<code>/know/react/</code>依次配置左侧菜单</li></ul> <h3 id="_1-3-优化配置"><a href="#_1-3-优化配置" class="header-anchor">#</a> <strong>1.3 优化配置</strong></h3> <ul><li>分开文件配置
+<ul><li>过于冗杂的配置会导致<code>config.js</code>文件越来大难以维护</li> <li>因此可以将部分配置分离出js文件引入配置</li> <li>在配置中引入<code>const nav = require('./nav.js')</code>进行配置</li></ul> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// nav.js</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+        text<span class="token operator">:</span> <span class="token string">'知识分类'</span><span class="token punctuation">,</span>
+        link<span class="token operator">:</span> <span class="token string">'/know/'</span><span class="token punctuation">,</span>
+        items<span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span> text<span class="token operator">:</span> <span class="token string">'Vue'</span><span class="token punctuation">,</span> link<span class="token operator">:</span> <span class="token string">'/know/vue/'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span> text<span class="token operator">:</span> <span class="token string">'React'</span><span class="token punctuation">,</span> link<span class="token operator">:</span> <span class="token string">'/know/react/'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token operator">...</span>
+<span class="token punctuation">]</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div></li></ul> <hr> <p>themeConfig基础配置就此结束</p> <div class="custom-block tip"><p class="title">扩展</p><p>在后期过多的文件夹和文件并不利于文件的配置</p> <p>每次新增文件就需增加配置，这样的维护我们并不想看见</p> <p>因此在主题篇中会介绍插件<a href="https://shanyuhai123.github.io/vuepress-plugin-auto-sidebar/zh/" target="_blank" rel="noopener noreferrer">Vuepress Plugin Auto Sidebar<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>有兴趣可以提前了解下</p></div></div></section> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">2025/11/4 14:10:38</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev"><a href="/blog/guide/blog/vuepress_install.html" class="prev">
+            VuePress 搭建
+          </a></span> <span class="next"><a href="/blog/guide/blog/vuepress_readme.html">
+            VuePress的README.md
+          </a></span></p></div> <div class="comments-wrapper"><!----></div> <ul class="side-bar sub-sidebar-wrapper" style="width:12rem;" data-v-70334359><li class="level-2" data-v-70334359><a href="/blog/guide/blog/vuepress_config.html#_1-config-js基础配置" class="sidebar-link reco-side-_1-config-js基础配置" data-v-70334359>1. config.js基础配置</a></li><li class="level-3" data-v-70334359><a href="/blog/guide/blog/vuepress_config.html#_1-1-head配置" class="sidebar-link reco-side-_1-1-head配置" data-v-70334359>1.1 head配置</a></li><li class="level-3" data-v-70334359><a href="/blog/guide/blog/vuepress_config.html#_1-2-themeconfig配置" class="sidebar-link reco-side-_1-2-themeconfig配置" data-v-70334359>1.2 themeConfig配置</a></li><li class="level-3" data-v-70334359><a href="/blog/guide/blog/vuepress_config.html#_1-3-优化配置" class="sidebar-link reco-side-_1-3-优化配置" data-v-70334359>1.3 优化配置</a></li></ul></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div><div class="kanbanniang" data-v-5775ee02><div class="banniang-container" style="display:;" data-v-5775ee02><div class="messageBox" style="right:68px;bottom:190px;display:none;" data-v-5775ee02>
+      我是Mr.Lan欢迎你的关注 
+    </div> <div class="operation" style="right:90px;bottom:40px;display:;" data-v-5775ee02><i class="kbnfont kbn-ban-home ban-home" data-v-5775ee02></i> <i class="kbnfont kbn-ban-message message" data-v-5775ee02></i> <i class="kbnfont kbn-ban-close close" data-v-5775ee02></i> <a target="_blank" href="https://vuepress-theme-reco.recoluan.com/views/plugins/kanbanniang.html" data-v-5775ee02><i class="kbnfont kbn-ban-info info" data-v-5775ee02></i></a> <i class="kbnfont kbn-ban-theme skin" style="display:none;" data-v-5775ee02></i></div> <canvas id="banniang" width="150" height="220" class="live2d" style="right:90px;bottom:-20px;opacity:0.9;" data-v-5775ee02></canvas></div> <div class="showBanNiang" style="display:none;" data-v-5775ee02>
+    看板娘
+  </div></div><div class="reco-bgm-panel" data-v-b1d3339e><audio id="bgm" src="https://m804.music.126.net/20220511152652/61f179ad242fa15fc3b19078f83d66ee/jdyyaac/obj/w5rDlsOJwrLDjj7CmsOj/14162454760/9c65/f746/e448/74ac330cd0d3aa0a45971a99da3b7372.m4a" data-v-b1d3339e></audio> <div class="reco-float-box" style="bottom:200px;z-index:999999;display:none;" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><img src="http://p2.music.126.net/YT6IU71FJRs0uzgUZABexQ==/109951167355147080.jpg?param=130y130" data-v-b1d3339e></div> <div class="reco-bgm-box" style="left:10px;bottom:10px;z-index:999999;" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><div class="reco-bgm-cover" style="background-image:url(http://p2.music.126.net/YT6IU71FJRs0uzgUZABexQ==/109951167355147080.jpg?param=130y130);" data-v-b1d3339e><div class="mini-operation" style="display:none;" data-v-b1d3339e><i class="reco-bgm reco-bgm-pause" style="display:none;" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-play" style="display:none;" data-v-b1d3339e></i></div> <div class="falut-message" style="display:none;" data-v-b1d3339e>
+          播放失败
+        </div></div> <div class="reco-bgm-info" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><div class="info-box" data-v-b1d3339e><i class="reco-bgm reco-bgm-music music" data-v-b1d3339e></i>玫瑰少年（小提琴版）</div> <div class="info-box" data-v-b1d3339e><i class="reco-bgm reco-bgm-artist" data-v-b1d3339e></i>Strictlyviolin荀博/王朝</div> <div class="reco-bgm-progress" data-v-b1d3339e><div class="progress-bar" data-v-b1d3339e><div class="bar" data-v-b1d3339e></div></div></div> <div class="reco-bgm-operation" data-v-b1d3339e><i class="reco-bgm reco-bgm-last last" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-pause pause" style="display:none;" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-play play" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-next next" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-volume1 volume" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-mute mute" style="display:none;" data-v-b1d3339e></i> <div class="volume-bar" data-v-b1d3339e><div class="bar" data-v-b1d3339e></div></div></div></div> <div class="reco-bgm-left-box" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><i class="reco-bgm reco-bgm-left" data-v-b1d3339e></i></div></div></div><div class="Sakura" data-v-017cf06a><canvas id="canvas_sakura" style="z-index:-1;" data-v-017cf06a></canvas></div><div></div></div></div>
+    <script src="/blog/assets/js/app.f66333c5.js" defer></script><script src="/blog/assets/js/3.500455a2.js" defer></script><script src="/blog/assets/js/1.1b68369d.js" defer></script><script src="/blog/assets/js/29.b506d85b.js" defer></script>
+  </body>
+</html>
